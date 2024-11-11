@@ -67,3 +67,6 @@ cypress/screenshots/
 # Ignore local Nx workspace files
 workspace.json
 angular.json
+
+
+.nx/workspace-data

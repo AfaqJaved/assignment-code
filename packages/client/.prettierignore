@@ -1,0 +1,53 @@
+# Ignore artifacts:
+dist
+build
+out
+*.log
+
+# Ignore environment variable files:
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore node_modules:
+node_modules
+
+# Ignore configuration files:
+.vscode
+.idea
+.DS_Store
+
+# Ignore specific file types or patterns:
+coverage
+*.min.js
+*.min.css
+*.map
+
+# Ignore generated files:
+public
+*.snap
+*.lock
+
+# Ignore specific files in the 'src' directory:
+src/**/*.test.js
+src/**/*.test.ts
+src/**/*.test.tsx
+src/**/*.spec.js
+src/**/*.spec.ts
+src/**/*.spec.tsx
+
+# Ignore Vite config files (if you don't want Prettier to format them):
+vite.config.js
+vite.config.ts
+vitest.config.js
+vitest.config.ts
+
+# Optional: Ignore certain folders in 'src':
+src/assets
+src/static
+
+# Ignore TypeScript build artifacts:
+*.d.ts
+*.tsbuildinfo

@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npx nx run-many --target=dev --parallel",
+    "test": "npx nx run-many --target=test --parallel",
+    "format": "npx nx run-many --target=format --parallel",
+    "lint": "npx nx run-many --target=lint --parallel"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nx": "20.0.12"
+  }
 }
