@@ -1,0 +1,80 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Employee {
+  id: ID!
+  name: String
+  age: Float
+  class: Class
+  subjects: [Subject!]
+  attendance: String
+}
+
+enum Class {
+  DEVELOPER
+  MANAGER
+  LEAD
+}
+
+enum Subject {
+  MATH
+  SCIENCE
+  ENGLISH
+  HISTORY
+  GEOGRAPHY
+}
+
+type EmployeeWithPagination {
+  totalItems: Float!
+  currentPage: Float!
+  totalPages: Float!
+  pageSize: Float!
+  hasPreviousPage: Boolean!
+  hasNextPage: Boolean!
+  items: [Employee!]
+}
+
+type LoginResponse {
+  token: String!
+}
+
+type Query {
+  getEmployee(id: String!): Employee!
+  listEmployees(page: Float!, limit: Float!): EmployeeWithPagination!
+  findEmployees(filter: EmployeeFilter!): [Employee!]!
+}
+
+input EmployeeFilter {
+  name: String
+  age: Float
+  class: Class
+  subjects: Subject
+}
+
+type Mutation {
+  addEmployee(input: EmployeeInput!): Employee!
+  updateEmployee(id: String!, input: EmployeeInputForUpdate!): Employee!
+  login(input: LoginInput!): LoginResponse!
+}
+
+input EmployeeInput {
+  name: String!
+  age: Float!
+  class: Class!
+  subjects: [Subject!]!
+  attendance: String!
+}
+
+input EmployeeInputForUpdate {
+  name: String
+  age: Float
+  class: Class
+  subjects: [Subject!]
+  attendance: String
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}

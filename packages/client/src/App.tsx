@@ -1,9 +1,9 @@
-import './App.css';
+import EmployeeDashboard from './pages/EmployeeDashBoard.tsx';
 
 function App() {
   return (
     <>
-      <h1>This is test</h1>
+      <EmployeeDashboard></EmployeeDashboard>
     </>
   );
 }
