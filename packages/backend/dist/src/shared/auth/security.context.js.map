@@ -1,0 +1,1 @@
+{"version":3,"file":"security.context.js","sourceRoot":"","sources":["../../../../src/shared/auth/security.context.ts"],"names":[],"mappings":";;;AAEA,MAAa,eAAe;IAI1B;IAEA,CAAC;IAED,MAAM,CAAC,WAAW;QAEhB,IAAI,CAAC,eAAe,CAAC,QAAQ,EAAE,CAAC;YAC9B,eAAe,CAAC,QAAQ,GAAG,IAAI,eAAe,EAAE,CAAC;QACnD,CAAC;QACD,OAAO,eAAe,CAAC,QAAQ,CAAC;IAClC,CAAC;;AAdH,0CAeC;AAdgB,wBAAQ,GAA2B,IAAI,CAAC"}
