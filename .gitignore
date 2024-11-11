@@ -1,0 +1,69 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules
+node_modules/
+.electron/
+
+# Dependency directories
+**/node_modules/
+**/bower_components/
+
+# Build directories
+dist/
+build/
+tmp/
+temp/
+.out/
+export/
+.docker/
+
+# Nx specific
+.nx/cache
+**/dist/
+**/.cache
+**/.nx/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+cypress/videos/
+cypress/screenshots/
+
+# Misc
+*.lock
+!.pnpm-lock.yaml
+*.log
+*.pid
+
+# Ignore IntelliJ project-specific files
+.idea/
+*.iml
+
+# Ignore local Nx workspace files
+workspace.json
+angular.json
