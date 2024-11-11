@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 interface MenuItemProps {
@@ -14,7 +14,7 @@ const MenuItem: FC<MenuItemProps> = ({ title, submenu }) => (
     </button>
     {submenu && (
       <div
-           className="absolute z-50 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+        className="absolute z-50 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
         <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
           {submenu.map((item, index) => (
             <a

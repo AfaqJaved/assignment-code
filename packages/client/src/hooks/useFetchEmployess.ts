@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Employee } from '../pages/EmployeeDashboard';
+import { Employee } from '../models/Employee.ts';
 
 export const useFetchEmployees = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);

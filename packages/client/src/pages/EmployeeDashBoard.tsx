@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useFetchEmployees } from '../hooks/useFetchEmployess.ts';
 import Switch from '../components/Switch';
 import Button from '../components/Button';

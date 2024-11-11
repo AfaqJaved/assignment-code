@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
-import { Employee } from '../pages/EmployeeDashboard';
+import  { FC } from 'react';
 import Button from './Button.tsx';
 import { ArrowLeft, X } from 'lucide-react';
+import { Employee } from '../models/Employee.ts';
 
 interface EmployeeDetailsProps {
   employee: Employee;

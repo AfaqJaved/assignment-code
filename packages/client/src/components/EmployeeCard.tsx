@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import  { FC } from 'react';
 import Button from './Button.tsx';
 import { Edit, Flag, Trash2 } from 'lucide-react';
 import { Employee } from '../models/Employee.ts';

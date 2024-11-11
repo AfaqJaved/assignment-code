@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 interface SwitchProps {
   checked: boolean;
@@ -16,7 +16,8 @@ const Switch: FC<SwitchProps> = ({ checked, onCheckedChange }) => {
           className="sr-only"
         />
         <div className="block h-8 w-14 rounded-full bg-[#E5E7EB]"></div>
-        <div className={`dot absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition ${checked ? 'translate-x-full bg-purple-400' : ""}`}></div>
+        <div
+          className={`dot absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition ${checked ? 'translate-x-full bg-purple-400' : ''}`}></div>
       </div>
     </label>
   );
